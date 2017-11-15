@@ -45,13 +45,13 @@
 
 	</script>
 </head>
-<body class="">
+<body class="" style="height:3000px;">
   <div class="container">
     <div id="brand">CloudCherry</div>
     <div class="button">
       <button type="button" id="anywhere">Launch Demo Survey</button>
       <br>
-      <small>Survey will launch in 10 sec of overall site time </small>
+      <small>Survey will launch only when scrolling >= 1500px </small>
     </div>
   </div>
 	<script>
@@ -110,7 +110,7 @@
       // console.log(e);
 			// console.log(ins);
       // e.detail.survey.trigger('launch');
-      e.detail.survey.trigger('site-time', 10);
+      e.detail.survey.trigger('scroll-pixels', 1500);
       //  e.detail.survey.trigger('launch');
     });
 
